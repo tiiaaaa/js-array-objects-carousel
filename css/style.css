@@ -13,9 +13,35 @@ div.my-carousel-images{
     min-height: 540px;
 }
 
+div.my-carousel{
+    height: 540px;
+    display: none;
+}
+
+img.my-carousel-picture,
+img.my-thumbnail-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+div.my-carousel.active{
+    display: block;
+}
+
 div.my-thumbnails{
     background-color: violet;
     min-height: 160px;
+}
+
+div.my-thumbnail{
+    width: calc(100% / 5);
+    filter: brightness(.4);
+}
+
+div.my-thumbnail.active{
+    border: 2px solid lightblue;
+    filter: brightness(1);
 }
 
 div.my-previous,
